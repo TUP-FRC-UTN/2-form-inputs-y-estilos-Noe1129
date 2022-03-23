@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/estilos/estilo1.css" />
+    <title>Ejercicio</title>
+  </head>
+  <body>
+    <h1 id="Inicio">Concurso Literario</h1>
+    <h2>Suscripción</h2>
+    <img
+      src="/images/Concurso.jpeg"
+      alt="Concurso"
+      style="float: right; width: 60%; height: 20%"
+    />
+    <form action="/" method="post">
+      Recepción de manuscritos hasta el miércoles: <br />
+      <input
+        type="date"
+        name="fecha"
+        id="fecha"
+        min="2022-03-30"
+        max="2022-03-30"
+      /><br /><br />
+      <fieldset
+        style="
+          border-radius: 20px;
+          width: 30%;
+          border-color: rgb(152, 201, 201);
+        "
+      >
+        <legend>Datos personales</legend>
+        Nombre: <br />
+        <input type="text" placeholder="Escribir Nombre" name="nombre" /><br />
+        Apellido: <br />
+        <input
+          type="text"
+          placeholder="Ingrese Apellido"
+          name="apellido"
+        /><br />
+        Email: <br />
+        <input
+          type="text"
+          placeholder="Ingrse su Email"
+          name="email"
+          id="email"
+        />
+      </fieldset>
+      <br /><br />
+
+      Seleccione la categoría: <br />
+      <div class="formato-radio">
+        <input
+          type="radio"
+          name="categoría"
+          id="item"
+          value="1"
+          checked
+        />Acción
+        <br />
+        <input type="radio" name="categoría" id="item" value="2" />Comedia
+        <br />
+        <input type="radio" name="categoría" id="item" value="3" />Poesía
+        <br />
+        <input type="radio" name="categoría" id="item" value="4" />Romántico
+        <br />
+        <input type="radio" name="categoría" id="item" value="5" />Terror
+      </div>
+      <br /><br />
+
+      Seleccione el premio por el que desea competir: <br />
+      <select name="calidad" id="calidad">
+        <option value="">Seleccione...</option>
+        <option value="1">Viaje</option>
+        <option value="2">Auto</option>
+        <option value="3">Departamento</option>
+        <option value="4">Libro</option>
+      </select>
+      <br /><br />
+      Ingrese su relato: <br />
+      <textarea
+        style="resize: none"
+        name="relato"
+        id="relato"
+        cols="50"
+        rows="20"
+        placeholder="Ingrese su relato..."
+      ></textarea>
+      <br /><br />
+      <button type="submit">Enviar</button>
+      <a href="#Inicio">Volver al inicio</a>
+    </form>
+  </body>
+</html>

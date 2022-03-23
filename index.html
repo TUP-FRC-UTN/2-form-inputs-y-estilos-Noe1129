@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clase 2 - Programación 3</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+      Nombre: <br />
+      <input type="text" placeholder="Escribir Nombre" name="nombre" /><br />
+      Apellido: <br />
+      <input type="text" placeholder="Ingrese Apellido" name="apellido" /><br />
+      <br />
+      Seleccion Género: <br />
+      <input type="radio" name="genero" id="genero" value="1" />Masculino <br />
+      <input type="radio" name="genero" id="genero" value="2" />Femenino <br />
+      <input type="radio" name="genero" id="genero" value="3" checked />Prefiero
+      no contestar <br />
+      <br />
+
+      Intereses: <br />
+      <input type="checkbox" name="intereses" id="intereses" checked />Deportes
+      <br />
+      <input type="checkbox" name="intereses" id="intereses" />Películas <br />
+      <input type="checkbox" name="intereses" id="intereses" />Series<br />
+      <br />
+
+      Fecha de Nacimiento: <br />
+      <input
+        type="date"
+        name="fecha-nacimiento"
+        id="fecha-nacimiento"
+        min="2022-03-23"
+        max="2022-03-25"
+      /><br /><br />
+
+      Seleccionar provincia: <br />
+      <select name="provincias" id="provincia">
+        <option value="">Seleccione...</option>
+        <option value="1">Córdoba</option>
+        <option value="2">Buenos Aires</option>
+      </select>
+      <br /><br />
+      Ingese su comentario: <br />
+      <textarea
+        style="resize: none"
+        name="comentario"
+        id="comentario"
+        cols="40"
+        rows="20"
+        placeholder="Ingrese su comentario..."
+      ></textarea>
+      <br /><br />
+      Ingrese su número:
+      <input type="number" name="numero" id="numero" min="10" max="100" />
+      <br /><br />
+      <input type="text" placeholder="000" name="numero" pattern="[0-9]{3}" />
+      <br /><br />
+      <button type="submit">Registrarse</button>
+
+      <button type="reset">Restablecer</button>
+    </form>
+  </body>
+</html>

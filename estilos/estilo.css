@@ -1,0 +1,48 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+  text-align: justify;
+  color: black;
+  background-color: cyan;
+}
+h1 {
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+}
+.parrafo-negrita {
+  font-weight: bold;
+}
+#parrafo-id {
+  border: 5px solid red;
+  font-size: small;
+}
+/*grupo de selectores*/
+p,
+.parrafo-negrita,
+#parrafo-id {
+  border: 10px solid green;
+}
+span {
+  font-size: inherit;
+  font-weight: 100;
+}
+/*selector para elementos subsiguientes*/
+p + span {
+  color: black;
+  font-size: large;
+}
+/*selector para todo aquel elemento que se encuentre dentro de <p>
+       sin importar el nivel de jerarquia*/
+p span {
+  color: blue;
+}
+/*selector para elementos anidados en el primer nivel de jerarquia*/
+p > span {
+  color: red;
+}
+p > span {
+    color: blue;
+  }

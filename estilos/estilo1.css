@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(240,248,255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #00308F;
+    font-weight: bold;
+    
+    
+}
+h1{
+    background-color: #72A0C1;
+    border-radius: 50%;
+    width: 45%;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 1px 2px 2px rgb(161, 115, 167);
+
+}
+h2{
+    text-shadow: 1px 2px 2px rgb(178,132,190);
+    
+}
+input{
+    margin-bottom: 10px;
+    
+}
+.formato-radio{
+    font-size: small;
+    border: none;
+    color:black;
+}
+
